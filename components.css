@@ -70,6 +70,15 @@
 .extra-benefits .highlights{display:grid;grid-template-columns:1fr 1fr;gap:18px 44px;list-style:none;margin:0;padding:0 0 0 20px}
 .extra-benefits .highlights li{position:relative;margin:0;padding:0;font:400 16px/26px Avenir,Arial,sans-serif;color:#282724}
 .extra-benefits .highlights li:before{content:'';position:absolute;left:-20px;top:8px;width:10px;height:10px;background:#df0a25}
+.extra-benefits .highlights-columns{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.extra-benefits .highlights-columns .highlights{display:flex;flex-direction:column;gap:18px;grid-template-columns:none}
+.hero-copy{padding-bottom:24px}
+#vyhody{padding-top:32px}
+.dealer-map{margin:32px 0 0}
+.dealer-map>a{display:block;border:1px solid #d6d5cf}
+.dealer-map img{width:100%;height:auto;display:block}
+.dealer-map figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:14px;font-size:14px;color:#df0a25}
+.dealer-map figcaption a:hover{text-decoration:underline}
 .open-visual{background:transparent;padding:0;display:flex;align-items:center;justify-content:center;min-height:0}
 .open-visual>img{width:100%;height:auto;max-height:310px;object-fit:contain;mix-blend-mode:multiply}
 .open-feature{align-items:center;grid-template-columns:340px minmax(0,1fr);gap:44px;background:#eeede8;padding:36px 44px;border-left:4px solid #df0a25}
@@ -91,6 +100,10 @@
  .hero-copy .button{width:auto}
  .extra-benefits{padding:24px}.extra-benefits h3{font-size:21px}
  .extra-benefits .highlights{grid-template-columns:1fr;gap:14px}.extra-benefits .highlights li{font-size:16px;line-height:25px}
+ .extra-benefits .highlights-columns{grid-template-columns:1fr;gap:14px}
+ .extra-benefits .highlights-columns .highlights{gap:14px}
+ .hero-copy{padding-bottom:20px}#vyhody{padding-top:28px}
+ .dealer-map{margin-top:24px}.dealer-map figcaption{font-size:13px}
  .tool-card-copy{padding:28px}
  .open-feature{grid-template-columns:1fr;gap:24px;padding:25px}.open-visual{padding:0;min-height:0;justify-content:flex-start}.open-visual>img{max-height:240px;width:auto;max-width:100%}
  .image-card .card-link,.tool-card .card-link{font-size:15px;padding:10px 0;line-height:24px}
