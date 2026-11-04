@@ -1,0 +1,7 @@
+# Source briefs and local review artifacts are not part of the public repository.
+*.docx
+00922_Baumit_tendr_WAU-banner_web.jpg
+preview-*.png
+*-preview.jpg
+*-reference.html
+_site/

@@ -1,0 +1,54 @@
+/* Dimensions and typefaces matched to the Baumit.cz main menu. */
+@font-face{font-family:Avenir;src:url('assets/avenir-medium.woff2') format('woff2');font-weight:500;font-display:swap}
+.site-header{border:0;position:sticky;top:0;background:#fff;z-index:20;color:#000;letter-spacing:normal;line-height:24px}
+.header-inner{width:100%;max-width:1236px;height:133px;padding:20px 0 0;margin:0 auto;display:grid;grid-template-columns:80px minmax(0,1fr);grid-template-rows:48px 56px;column-gap:48px;row-gap:9px;align-items:center}
+.brand{margin:0;width:80px;grid-row:1/3;align-self:center;transform:translateY(-4px)}
+.brand img{width:80px;height:auto}
+.header-secondary{grid-column:2;grid-row:1;display:flex;align-items:center;height:48px;width:100%;gap:0}
+.header-search{flex:1;min-width:0;margin-right:10px;position:relative}
+.header-search input{width:100%;height:48px;padding:10px 10px 10px 36px;border:0;border-radius:4px;background:#f6f5f3;font:400 16px/16px Avenir,Arial,sans-serif;color:#000}
+.header-search button{border:0;background:none;position:absolute;left:12px;top:14px;padding:0;width:20px;height:20px;color:#808080}
+.header-search svg{width:20px;height:20px}
+.header-secondary-links{display:flex;align-items:center;flex-shrink:0}
+.header-secondary-links>a{display:flex;flex-direction:column;padding:8px;border:1px solid transparent;border-radius:4px;color:#575550;white-space:nowrap}
+.header-secondary-links>a:hover{border:1px dashed gray}
+.header-secondary-links small{font:400 12px/14px Avenir,Arial,sans-serif}
+.header-secondary-links strong{font:500 15px/14px Avenir,Arial,sans-serif}
+.site-header .country{padding:8px;gap:4px;height:46px;display:flex}
+.site-header .country img{width:24px;height:24px}
+.site-header .country svg{width:16px;height:16px}
+.header-primary{grid-column:2;grid-row:2;display:flex;height:56px;margin-top:0;align-items:center;justify-content:space-between;min-width:0}
+.desktop-nav{display:flex;gap:0;margin-left:-16px;flex-shrink:0;font:700 18px/22px Avenir,Arial,sans-serif}
+.desktop-nav a{display:flex;align-items:center;padding:16px;height:54px;white-space:nowrap;font-weight:700;letter-spacing:normal}
+.desktop-nav a:hover{color:#575550;background:#f6f5f3}
+.header-tools{gap:0;align-items:center;justify-content:flex-end;margin-left:auto}
+.site-header .account{display:flex;align-items:center;gap:8px;padding:16px;color:#000;height:56px}
+.site-header .account svg{width:24px;height:24px}
+.account-name{font:400 16px/22px Avenir,Arial,sans-serif;white-space:nowrap}
+.account-name b{font-weight:700}
+.site-header .header-tools #search-toggle,.header-tools .country{display:none}
+.site-header .menu-toggle{width:60px;height:46px;padding:16px;gap:4px}
+.site-header .menu-toggle span{width:28px;height:2px;border-radius:9px;background:#000;flex-shrink:0}
+.site-header .mobile-nav{font:700 18px/24px Avenir,Arial,sans-serif;max-height:calc(100vh - 133px);overflow:auto}
+.site-header.is-scrolled .header-inner{height:80px;padding-top:0;grid-template-columns:40px minmax(0,1fr);grid-template-rows:80px;column-gap:32px;row-gap:0}
+.site-header.is-scrolled .brand{grid-row:auto;transform:none;width:40px}
+.site-header.is-scrolled .brand img{width:40px}
+.site-header.is-scrolled .header-secondary{display:none}
+.site-header.is-scrolled .header-primary{margin-top:0;grid-row:1}
+@media(min-width:1024px) and (max-width:1256px){.header-inner{padding-inline:10px}.desktop-nav a{padding-inline:10px}.desktop-nav{margin-left:-10px;font-size:16px}.header-secondary-links>a{padding-inline:5px}.header-secondary-links small{font-size:10px}.header-secondary-links strong{font-size:13px}.site-header .account{padding-inline:8px}.account-name{font-size:14px}}
+@media(max-width:1023px){
+ .site-header .header-inner,.site-header.is-scrolled .header-inner{display:flex;justify-content:space-between;gap:32px;height:52px;padding:0 10px;width:100%;max-width:none}
+ .site-header .brand,.site-header.is-scrolled .brand{width:38px;margin:0;transform:none;flex-shrink:0}
+ .site-header .brand img,.site-header.is-scrolled .brand img{width:38px;height:38px}
+ .header-secondary,.desktop-nav{display:none}
+ .header-primary,.site-header.is-scrolled .header-primary{margin:0;height:52px;flex:1;justify-content:flex-end}
+ .header-tools{height:52px;gap:0}
+ .site-header .account{display:flex;padding:8px;height:50px;gap:0}
+ .site-header .account svg{width:32px;height:32px}
+ .account-name{display:none}
+ .site-header .header-tools #search-toggle{display:flex;width:40px;height:50px;margin:0;padding:4px}
+ .site-header #search-toggle svg{width:32px;height:32px}
+ .header-tools .country{display:flex!important;padding:12px;gap:4px;height:50px}
+ .site-header .menu-toggle{width:60px;height:46px;padding:16px}
+ .site-header .mobile-nav{max-height:calc(100vh - 52px)}
+}
